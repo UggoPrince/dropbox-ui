@@ -1,25 +1,39 @@
 <template>
-  <b-container>
     <div id="app">
       <!--<img src="./assets/logo.png">-->
-      <router-view/>
+      <Banner></Banner>
+      <Body></Body>
+      <Footer></Footer>
     </div>
-  </b-container>
 </template>
 
 <script>
+import Banner from '@/components/Banner';
+import Body from '@/components/Body';
+import Footer from '@/components/Footer';
+
 export default {
   name: 'App',
+  components: {
+    Banner,
+    Body,
+    Footer,
+  },
 };
 </script>
 
-<style>
+<!--<style lang="scss">
+  // @import "";
+</style>-->
+
+<!--<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
+  width: 100%;
 }
-</style>
+</style>-->
